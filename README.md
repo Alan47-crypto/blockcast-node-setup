@@ -33,6 +33,7 @@ docker --version && docker-compose --version
 ```bash
 git clone https://github.com/Blockcast/beacon-docker-compose.git
 ```
+![Clone Repo](https://github.com/Alan47-crypto/blockcast-node-setup/blob/main/clone%20blockcast%20repo.png)
 
 ### 2. Enter Directory
 ```bash
@@ -48,11 +49,13 @@ docker compose up -d
 ```bash
 docker compose ps
 ```
+![Docker ps](https://github.com/Alan47-crypto/blockcast-node-setup/blob/main/docker%20ps.png)
 
 ### 5. Get Node Credentials
 ```bash
 docker compose exec blockcastd blockcastd init
 ```
+![Node info](https://github.com/Alan47-crypto/blockcast-node-setup/blob/main/node%20info.png)
 
 📝 Copy the Hardware ID and Challenge Key
 
@@ -63,3 +66,7 @@ docker compose exec blockcastd blockcastd init
 - Connect your Solana wallet
 
 - Register node using copied credentials
+  ![Node registration](https://github.com/Alan47-crypto/blockcast-node-setup/blob/main/node%20register.png)
+
+-------
+  📝 Rewards are updated every 24 hours and typically kicks in within 24-48 hours after the first rewards. Keep your node online to maximize your potential earnings!
