@@ -1,36 +1,56 @@
-cat > README.md << 'EOF'
 # Blockcast Network Node Setup Guide
 
-🔗 **Official Link**: [https://app.blockcast.network](https://app.blockcast.network)
+## 🛠️ Prerequisites
+- Ubuntu VPS (Recommended 4GB RAM+)
+- sudo/root access
+- Basic terminal knowledge
 
-## 📌 Prerequisites
-- Email account for signup
-- Solana wallet (BURNER recommended)
-- X (Twitter) and Discord accounts
+## 🔧 Docker Installation
+Run these commands **in order**:
 
-## 🚀 Quick Setup
-1. **Sign up** with your email  
-2. **Connect your Solana wallet** in Profile  
-3. **Bind X & Discord**  
-4. **Complete quests**  
-   ✅ Done!
-
-## 🖥️ Node Installation Guide
+### 1. Update System Packages
 ```bash
-# Start Docker
-sudo systemctl start docker
+sudo apt update && sudo apt upgrade -y
 
-# Clone the repository
+### 2. Install Docker
+```bash
+sudo apt install docker.io docker-compose -y
+
+### 3. Start Docker Service
+```bash
+sudo systemctl enable --now docker
+
+### 4. Verify Installation
+```bash
+docker --version && docker-compose --version
+
+🚀 Node Setup
+### 1. Clone Repository
+```bash
 git clone https://github.com/Blockcast/beacon-docker-compose.git
 
-# Navigate to directory
+### 2. Enter Directory
+```bash
 cd beacon-docker-compose
 
-# Deploy the node
+### 3. Launch Node
+```bash
 docker compose up -d
 
-# Verify it's running
+### 4. Check Status
+```bash
 docker compose ps
 
-# Get your credentials
+### 5. Get Node Credentials
+```bash
 docker compose exec blockcastd blockcastd init
+
+📝 Copy the Hardware ID and Challenge Key
+
+
+📌 Registration
+- Go to Blockcast Dashboard: https://app.blockcast.network?referral-code=yBlf4A
+
+- Connect your Solana wallet
+
+- Register node using copied credentials
