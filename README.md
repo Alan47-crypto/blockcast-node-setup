@@ -28,7 +28,7 @@ sudo systemctl enable --now docker
 docker --version && docker-compose --version
 ```
 
-🚀 Node Setup
+### 🚀 Node Setup
 ### 1. Clone Repository
 ```bash
 git clone https://github.com/Blockcast/beacon-docker-compose.git
@@ -60,7 +60,7 @@ docker compose exec blockcastd blockcastd init
 📝 Copy the Hardware ID and Challenge Key
 
 
-📌 Registration
+### 📌 Registration
 - Go to Blockcast Dashboard: https://app.blockcast.network?referral-code=yBlf4A
 
 - Connect your Solana wallet
