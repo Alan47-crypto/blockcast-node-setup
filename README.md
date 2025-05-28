@@ -69,4 +69,12 @@ docker compose exec blockcastd blockcastd init
   ![Node registration](https://github.com/Alan47-crypto/blockcast-node-setup/blob/main/node%20register.png)
 
 -------
+
+### 📜 Check logs: 
+```bash
+docker logs -f blockcastd
+```
+
+
+-------
   📝 Rewards are updated every 24 hours and typically kicks in within 24-48 hours after the first rewards. Keep your node online to maximize your potential earnings!
